@@ -1,4 +1,9 @@
 SingleUserTwitter::Application.routes.draw do
+  
+  match '/' => 'tweets#index', :as => 'tweets', :via => :get
+  
+  # The URL / loads the index action of the tweets controller.
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
